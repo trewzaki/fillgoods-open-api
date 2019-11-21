@@ -1,4 +1,4 @@
-# Fillgoods Open API (Version beta)
+# Fillgoods Open API
 ***
 
 ## API : Create Order
