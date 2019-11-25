@@ -16,6 +16,7 @@ Headers :
 Request Parameter :
 ```json
 {
+    "order_number": "19112400001",
     "tracking_number": "111234567891",
     "payment_type": 2,
     "cod_amount": 0,
@@ -41,6 +42,7 @@ Request Description :
 
 | Name  | Type | Required | Description |
 |---|---|---|---|
+| order_number  | string(20)  | true | Partner's order number |
 | tracking_number  | string(100)  | true | Fillgoods's tracking number |
 | payment_type  | integer  | true | Payment type (COD: 2, Transfer: 3)|
 | cod_amount  | double  | false | COD amount (unit: baht) |
@@ -65,7 +67,9 @@ Response Parameter :
 ```json
 {
     "success": true,
-    "message": ""
+    "message": "",
+    "order_number": "19112400001",
+    "timestamp": 1528070400
 }
 ```
 
@@ -74,4 +78,6 @@ Response Description :
 | Name | Type | Description |
 |---|---|---|
 | success  | boolean  |  API success status (true, false)  |
-| message  | string   | Error message when success = false ||
+| message  | string   | Error message when success = false |
+| order_number  | string   | Partner's order number |
+| timestamp  | integer   | The current unix timestamp |
