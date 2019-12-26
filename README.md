@@ -35,8 +35,8 @@ Request Parameter :
     "dst_district": "เมืองเชียงใหม่",
     "dst_province": "เชียงใหม่",
     "dst_zipcode": "50200",
-	"shop_id": 1,
-	"weight": 1.5
+    "shop_id": 1,
+    "weight": 1.5
 }
 ```
 
@@ -88,7 +88,6 @@ Response Description :
 
 
 <br>
-***
 <br>
 
 ## API : Calculate Cost with Weight
