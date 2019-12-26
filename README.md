@@ -34,7 +34,9 @@ Request Parameter :
     "dst_sub_district": "สุเทพ",
     "dst_district": "เมืองเชียงใหม่",
     "dst_province": "เชียงใหม่",
-    "dst_zipcode": "50200"
+    "dst_zipcode": "50200",
+	"shop_id": 1,
+	"weight": 1.5
 }
 ```
 
@@ -61,6 +63,8 @@ Request Description :
 | dst_district  | string(100)  | true | Consignee's district |
 | dst_province  | string(100)  | true | Consignee's province |
 | dst_zipcode  | string(5)  | true | Consignee's zipcode |
+| shop_id | integer | false | Shop ID when have many shops |
+| weight | double | false | Product’s weight (kg) |
 
 
 Response Parameter :
@@ -81,3 +85,52 @@ Response Description :
 | message  | string   | Error message when success = false |
 | order_number  | string   | Partner's order number |
 | timestamp  | integer   | The current unix timestamp |
+
+
+<br>
+***
+<br>
+
+## API : Calculate Cost with Weight
+Method : POST
+
+Link : "/courier/calculate-cost"
+
+Headers : 
+```json
+{
+    "Content-Type": "application/json"
+}
+```
+
+Request Parameter :
+```json
+{
+    "weight": 1.5,
+    "shipping_province": "กรุงเทพมหานคร"
+}
+```
+
+Request Description :
+
+| Name  | Type | Required | Description |
+|---|---|---|---|
+| weight  | double | true | Product's weight (kg) |
+| shipping_province  | string  | true | Shipping's province |
+
+Response Parameter :
+```json
+{
+    "success": true,
+    "message": "",
+    "cost": 68
+}
+```
+
+Response Description :
+
+| Name | Type | Description |
+|---|---|---|
+| success  | boolean  |  API success status (true, false)  |
+| message  | string   | Error message when success = false |
+| cost  | string   | Delivery cost (baht) |
