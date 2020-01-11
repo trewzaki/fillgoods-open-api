@@ -232,7 +232,7 @@ Method : POST
 
 Link : "/courier/scg/create-booking"
 
-####  **** MUST USE AN API BEFORE 11:00 (GMT+7)**
+####  ** MUST USE AN API BEFORE 11:00 (GMT+7) **
 
 Headers : 
 ```json
