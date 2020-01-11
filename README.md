@@ -221,3 +221,116 @@ Response Description :
 | success  | boolean  |  API success status (true, false)  |
 | message  | string   | Error message when success = false |
 | cost  | string   | Delivery cost (baht) |
+
+
+<br>
+<br>
+
+## API : Create SCG Booking
+Method : POST
+
+
+Link : "/courier/scg/create-booking"
+
+####  **** MUST USE AN API BEFORE 11:00 (GMT+7)**
+
+Headers : 
+```json
+{
+    "Content-Type": "application/json"
+}
+```
+
+Request Parameter :
+```json
+{
+    "booking_time": "15:00",
+    "quantity": 5,
+    "shipper_name": "ร้านขายทุกอย่าง 20 บาท",
+    "shipper_phone_number": "0811111111",
+    "shipper_address": "11 หมู่ 2",
+    "shipper_sub_district": "สวนจิตรลดา",
+    "shipper_district": "ดุสิต",
+    "shipper_province": "กรุงเทพมหานคร",
+    "shipper_zipcode": "10300",
+    "remark": "พัสดุแตกง่าย โปรดใช้ความระมัดระวัง"
+}
+```
+
+Request Description :
+
+| Name  | Type | Required | Description |
+|---|---|---|---|
+| booking_time  | double | true | Time for booking hh:mm (must be 13:00, 13:30, 14:00, 14:30, 15:00 (GMT+7)) |
+| quantity  | double | true | Order quantity for booking |
+| shipper_name  | string(100)  | true | Shipper's name for booking |
+| shipper_phone_number | string(10)  | true | Shipper's phone number for booking |
+| shipper_address | string(200)  | true | Shipper's address for booking |
+| shipper_sub_district | string(100)  | true | Shipper's sub district for booking |
+| shipper_district  | string(100)  | true | Shipper's district for booking |
+| shipper_province  | string(100)  | true | Shipper's province for booking |
+| shipper_zipcode  | string(5)  | true | Shipper's zipcode for booking |
+| remark  | string(500)  | false | Remark |
+
+Response Parameter :
+```json
+{
+    "success": true,
+    "message": "",
+    "booking_id": 1
+}
+```
+
+Response Description :
+
+| Name | Type | Description |
+|---|---|---|
+| success  | boolean  |  API success status (true, false)  |
+| message  | string   | Error message when success = false |
+| booking_id  | integer  | SCG booking ID |
+
+
+
+<br>
+<br>
+
+## API : Cancel SCG Booking
+Method : POST
+
+Link : "/courier/scg/cancel-booking"
+
+Headers : 
+```json
+{
+    "Content-Type": "application/json"
+}
+```
+
+Request Parameter :
+```json
+{
+    "booking_id": 1
+}
+```
+
+Request Description :
+
+| Name  | Type | Required | Description |
+|---|---|---|---|
+| booking_id  | interger  | true |  SCG booking ID |
+
+Response Parameter :
+```json
+{
+    "success": true,
+    "message": ""
+}
+```
+
+Response Description :
+
+| Name | Type | Description |
+|---|---|---|
+| success  | boolean  |  API success status (true, false)  |
+| message  | string   | Error message when success = false |
+
