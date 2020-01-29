@@ -36,7 +36,8 @@ Request Parameter :
     "dst_province": "เชียงใหม่",
     "dst_zipcode": "50200",
     "shop_id": 1,
-    "weight": 1.5
+    "weight": 1.5,
+    "delivery_cost": 35
 }
 ```
 
@@ -65,6 +66,7 @@ Request Description :
 | dst_zipcode  | string(5)  | true | Consignee's zipcode |
 | shop_id | integer | false | Shop ID when have many shops |
 | weight | double | false | Product’s weight (kg) |
+| delivery_cost | double | false | Delivery cost (baht) |
 
 
 Response Parameter :
@@ -124,7 +126,8 @@ Request Parameter :
     "dst_province": "เชียงใหม่",
     "dst_zipcode": "50200",
     "shop_id": 1,
-    "weight": 1.5
+    "weight": 1.5,
+    "delivery_cost": 35
 }
 ```
 
@@ -152,6 +155,7 @@ Request Description :
 | dst_zipcode  | string(5)  | true | Consignee's zipcode |
 | shop_id | integer | false | Shop ID when have many shops |
 | weight | double | false | Product’s weight (kg) |
+| delivery_cost | double | false | Delivery cost (baht) |
 
 
 Response Parameter :
