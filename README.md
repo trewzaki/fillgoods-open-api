@@ -10,7 +10,7 @@ Headers :
 ```json
 {
     "Content-Type": "application/json",
-	"Authorization": "PARTNER_TOKEN"
+    "Authorization": "PARTNER_TOKEN"
 }
 ```
 
@@ -102,7 +102,7 @@ Headers :
 ```json
 {
     "Content-Type": "application/json",
-	"Authorization": "PARTNER_TOKEN"
+    "Authorization": "PARTNER_TOKEN"
 }
 ```
 
@@ -220,19 +220,20 @@ Request Parameter :
 	"dst_zipcode": "50200",
 	"shop_id": 1,
 	"delivery_cost": 35,
-	"products": [{
-			"product_sku": "SKU-001",
-			"product_name": "ถุงมือพลาสติกแบบใช้แล้วทิ้ง",
-			"product_weight": 0.45,
-			"quantity": 5,
-			"price": 20
+	"products": [
+		{
+		    "product_sku": "SKU-001",
+		    "product_name": "ถุงมือพลาสติกแบบใช้แล้วทิ้ง",
+		    "product_weight": 0.45,
+		    "quantity": 5,
+		    "price": 20
 		},
 		{
-			"product_sku": "SKU-002",
-			"product_name": "เชือกกระโดดสำหรับออกกำลังกาย",
-			"product_weight": 0.3,
-			"quantity": 1,
-			"price": 20
+		    "product_sku": "SKU-002",
+		    "product_name": "เชือกกระโดดสำหรับออกกำลังกาย",
+		    "product_weight": 0.3,
+		    "quantity": 1,
+		    "price": 20
 		}
 	]
 }
@@ -302,7 +303,7 @@ Headers :
 ```json
 {
     "Content-Type": "application/json",
-	"Authorization": "PARTNER_TOKEN"
+    "Authorization": "PARTNER_TOKEN"
 }
 ```
 
@@ -354,7 +355,7 @@ Headers :
 ```json
 {
     "Content-Type": "application/json",
-	"Authorization": "PARTNER_TOKEN"
+    "Authorization": "PARTNER_TOKEN"
 }
 ```
 
@@ -420,7 +421,7 @@ Headers :
 ```json
 {
     "Content-Type": "application/json",
-	"Authorization": "PARTNER_TOKEN"
+    "Authorization": "PARTNER_TOKEN"
 }
 ```
 
