@@ -264,7 +264,7 @@ Request Description :
 | delivery_cost | double | false | Delivery cost (baht) |
 | products.product_sku  | string(100)  | true | Product's SKU |
 | products.product_name  | string(255)  | true | Product's name |
-| products.weight | double | true | Product's weight (kg) |
+| products.product_weight | double | true | Product's weight (kg) |
 | products.quantity | integer | true | Product's weight (kg) |
 | products.price | double | true | Product's price (baht) |
 
